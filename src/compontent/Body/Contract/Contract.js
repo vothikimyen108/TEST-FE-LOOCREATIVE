@@ -1,10 +1,10 @@
-import { makeStyles } from "@material-ui/core/styles";
 import contractImg1 from "../../../assets/icon/-e-upload_icon_1.png";
 import contractImg2 from "../../../assets/icon/-e-upload_icon_2.png";
 import contractImg3 from "../../../assets/icon/-e-upload_icon_3.png";
 import contractImg4 from "../../../assets/icon/-e-upload_icon_4.png";
-
 import ContractItem from "./ContractItem";
+import { makeStyles } from "@material-ui/core/styles";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",

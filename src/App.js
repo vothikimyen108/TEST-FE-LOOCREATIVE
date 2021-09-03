@@ -13,6 +13,8 @@ import BuleLayout from "./compontent/Body/BuleLayout";
 import CardLayout from "./compontent/Body/CardLayout";
 import PartnerLayout from "./compontent/Body/PartnerLayout";
 import Footer from "./compontent/Body/Footer/Footer";
+
+import LastLayoutt from "./compontent/Body/LastLayout";
 function App() {
   return (
     <>
@@ -25,6 +27,7 @@ function App() {
       <BuleLayout></BuleLayout>
       <CardLayout></CardLayout>
       <PartnerLayout></PartnerLayout>
+      <LastLayoutt></LastLayoutt>
       <Footer></Footer>
     </>
   );
