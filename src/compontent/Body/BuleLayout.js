@@ -1,9 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import RegulationList from "./Regulation/RegulationList";
 import Button from "@material-ui/core/Button";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import Contract from "./Contract/Contract";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -11,48 +11,38 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     textAlign: "center",
-    height: "auto",
-    paddingBottom: 40,
-    "& h3": {
-      fontSize: "20px",
-      marginBotton: 30,
-    },
+    height: "418px",
+    color: "#fff",
+    background: "#157eff",
     "& p": {
-      fontSize: "16px",
+      fontSize: "18px",
+    },
+    "& h3": {
+      fontSize: "40px",
+      margin: 10,
     },
     [theme.breakpoints.up("lg")]: {
-      "& h3": {
-        fontSize: "40px",
-      },
-      "& p": {
-        fontSize: "18px",
-      },
+      //   "& h3": {
+      //     fontSize: "40px",
+      //   },
+      //   "& p": {
+      //     fontSize: "18px",
+      //   },
     },
   },
-  center: {
-    marginTop: 30,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  center1: {
-    marginBottom: 30,
-    margin: 0,
-    textAlign: "center",
-  },
-  top: {
-    margin: 0,
-    textAlign: "center",
-  },
   button: {
-    background: "#333333",
+    background: "#157eff",
     borderRadius: 50,
     color: "white",
     height: 40,
     padding: "0 30px",
     fontSize: "10px",
+    boxShadow: "none",
+    border: "1px solid #fff",
+    marginTop: 30,
     "&:hover": {
-      background: "#333333",
+      background: "#157eff",
+      boxShadow: "none",
     },
     [theme.breakpoints.up("lg")]: {
       height: 50,
@@ -65,21 +55,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RegulationLayout() {
+export default function BuleLayout() {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.root}>
-      <h3>다양한 계약서에 필수적 사용</h3>
-      <p>
-        근로 계약서, 각종 동의서, 입점 계약서, 가맹 계약서,<br></br> 용역
-        계약서, 공급 계약서<br></br> 이외에도 사용 가능한 계약서를
-      </p>
-      <RegulationList></RegulationList>
-      <p>그 외 사용가능한 계약서가 궁금하신가요?</p>
+      {/* <Grid item xs={12}> */}
+      <p>지금 바로 시작하세요!</p>
+      <h3>
+        설명이 필요 없는 간단한 계약 과정,<br></br> 직접 경험해보세요!
+      </h3>
       <Button
         variant="contained"
-        size="large"
         classes={{
           root: classes.button, // class name, e.g. `classes-nesting-root-x`
           label: classes.label, // class name, e.g. `classes-nesting-label-x`

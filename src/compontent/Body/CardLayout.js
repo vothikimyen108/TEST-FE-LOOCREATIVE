@@ -1,9 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import RegulationList from "./Regulation/RegulationList";
-import Button from "@material-ui/core/Button";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import CardList from "./Card/CardList";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -12,10 +10,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     textAlign: "center",
     height: "auto",
-    paddingBottom: 40,
+    padding: 50,
+    background: "#f4f5f8",
     "& h3": {
       fontSize: "20px",
-      marginBotton: 30,
+      margin: 20,
     },
     "& p": {
       fontSize: "16px",
@@ -65,29 +64,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RegulationLayout() {
+export default function CardLayout() {
   const classes = useStyles();
 
   return (
     <Grid container className={classes.root}>
-      <h3>다양한 계약서에 필수적 사용</h3>
+      <h3>안전한 안심 제도</h3>
       <p>
-        근로 계약서, 각종 동의서, 입점 계약서, 가맹 계약서,<br></br> 용역
-        계약서, 공급 계약서<br></br> 이외에도 사용 가능한 계약서를
+        가드 시그니처는 [전자문서및전자거래기본법 제4조 제1항]과<br></br>{" "}
+        [전자서명법 제3조 제3항]에 따라 확실한 법적효력을
       </p>
-      <RegulationList></RegulationList>
-      <p>그 외 사용가능한 계약서가 궁금하신가요?</p>
-      <Button
-        variant="contained"
-        size="large"
-        classes={{
-          root: classes.button, // class name, e.g. `classes-nesting-root-x`
-          label: classes.label, // class name, e.g. `classes-nesting-label-x`
-        }}
-        endIcon={<ArrowForwardIosIcon />}
-      >
-        전자계약 체험하기
-      </Button>
+      <CardList></CardList>
     </Grid>
   );
 }
