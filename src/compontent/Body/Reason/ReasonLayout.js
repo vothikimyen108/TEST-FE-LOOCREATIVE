@@ -11,12 +11,7 @@ import reason5 from "../../../assets/icon/-e-reason_icon_5.png";
 import ReasonList from "./ReasonList";
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
+    width: "100%",
   },
   center: {
     "& img": {

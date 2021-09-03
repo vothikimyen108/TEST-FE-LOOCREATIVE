@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-start",
     [theme.breakpoints.up("lg")]: {
-      width: "25%",
+      width: "10%",
       justifyContent: "flex-end",
     },
   },

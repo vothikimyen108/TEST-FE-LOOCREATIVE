@@ -45,14 +45,15 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     "& p": {
-      fontSize: "16px",
+      fontSize: "12px",
+      padding: 10,
       width: "100%",
-      padding: 0,
       [theme.breakpoints.up("lg")]: {
         margin: 0,
-        fontSize: "12px",
+        fontSize: "16px",
         width: "95%",
         color: "#333333",
+        padding: 0,
       },
     },
 

@@ -4,15 +4,16 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { NavMenu, NavItem } from "@mui-treasury/components/menu/navigation";
 import { useZoomNavigationMenuStyles } from "@mui-treasury/styles/navigationMenu/zoom";
-import N from "../../../assets/icon/N.png";
-import F from "../../../assets/icon/f.png";
-import B from "../../../assets/icon/B.png";
+import N from "../../assets/icon/N.png";
+import F from "../../assets/icon/f.png";
+import B from "../../assets/icon/B.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "229px",
+    height: "300px",
+    padding: 20,
     "& p": {
       marginLeft: 10,
       color: "grey",
@@ -41,7 +42,7 @@ export default function Footer() {
   return (
     <div className={classes.root}>
       <Grid container className={classes.root}>
-        <Grid item xs={12} lg={4}>
+        <Grid item xs={12} lg={5}>
           <NavMenu>
             <NavItem>이용약관 </NavItem>
             <NavItem>개인정보처리방침</NavItem>
@@ -55,7 +56,7 @@ export default function Footer() {
             Copyright© GUARDSIGNATURE All rights reserved.
           </p>
         </Grid>
-        <Grid item xs={12} lg={4} className={classes.right}>
+        <Grid item xs={12} lg={5} className={classes.right}>
           <div className={classes.img}>
             {" "}
             <img src={N} alt={"img"}></img>

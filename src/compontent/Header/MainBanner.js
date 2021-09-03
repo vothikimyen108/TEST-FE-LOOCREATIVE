@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     backgroundSize: "cover",
-    margin: 0,
+    marginTop: 100,
+
     [theme.breakpoints.up("lg")]: {
       height: "657px",
       backgroundSize: "100% 100%",
+      marginTop: 40,
     },
   },
   text: {
