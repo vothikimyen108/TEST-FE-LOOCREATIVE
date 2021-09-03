@@ -3,65 +3,39 @@ import Avatar from "@material-ui/core/Avatar";
 import { Row, Item } from "@mui-treasury/components/flex";
 import { Info, InfoTitle, InfoSubtitle } from "@mui-treasury/components/info";
 import { useTutorInfoStyles } from "@mui-treasury/styles/info/tutor";
-import Productimg from "../../assets/product/product.svg";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import { useSpring, animated } from "react-spring";
-import { NavLink } from "react-router-dom";
-import Auction from "./Auction";
+import ArrowRight from "../../../assets/icon/Shape 881 copy 4.png";
+
 ///css
-import ProductStyles from "./ProductStyles";
-export const Product = function TutorCard(props) {
-  const styles = ProductStyles();
-  //animate
-  const stylesSpring = useSpring({
-    loop: { reverse: true },
-    from: { x: 0 },
-    to: { x: 20 },
-  });
-  //true hiện aution
-  const isAution = props.isAution;
-  //true hiện đi đấu giá
-  const isGo = props.isGo;
+import RegulatiomStyles from "./RegulatiomStyles";
+export const Regulation = function TutorCard(props) {
+  const styles = RegulatiomStyles();
   return (
     <div>
       <Row
-        p={1.5}
-        gap={2}
-        bgcolor={"#f5f5f5"}
-        borderRadius={10}
+        // p={1.5}
+        // gap={2}
+        borderRadius={0}
         key={props.key}
         className={styles.root}
       >
         <Item className={styles.go}>
-          <Avatar src={Productimg} />
+          <Avatar src={props.img} className={styles.large} />
         </Item>
         <Info
           position={"middle"}
           useStyles={useTutorInfoStyles}
           className={styles.go}
         >
-          <InfoTitle>Chè khoai môn - khởi điểm: 10k</InfoTitle>
-          <InfoSubtitle>hạn chót: 2020-1-1</InfoSubtitle>
+          <InfoTitle>{props.title}</InfoTitle>
+          <InfoSubtitle>{props.titleSub}</InfoSubtitle>
+          <InfoSubtitle>{props.titleSub1}</InfoSubtitle>
         </Info>
 
-        {isGo && (
-          <Item position={"middle"} className={styles.goLast}>
-            {" "}
-            <NavLink to="/photo/1" className={styles.link}>
-              <animated.div
-                style={{
-                  ...stylesSpring,
-                }}
-              >
-                <ArrowForwardIosIcon></ArrowForwardIosIcon>
-                <ArrowForwardIosIcon></ArrowForwardIosIcon>
-              </animated.div>{" "}
-            </NavLink>
-          </Item>
-        )}
+        <Item position={"middle"} className={styles.goLast}>
+          {" "}
+          <img src={ArrowRight} alt="anh"></img>
+        </Item>
       </Row>
-
-      {isAution && <Auction></Auction>}
     </div>
   );
 };

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     color: "#333333",
     "& h1": {
-      fontSize: "20px",
+      fontSize: "24px",
 
       fontFamily: "Arial, Helvetica, sans-serif",
       fontWeight: 800,
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 40,
       [theme.breakpoints.up("lg")]: {
         position: "absolute",
-        top: "-12px",
+        top: "0px",
         left: "42%",
         margin: 0,
         color: "#333333",
@@ -45,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     "& p": {
-      fontSize: "9px",
+      fontSize: "16px",
       width: "100%",
-      padding: 20,
+      padding: 0,
       [theme.breakpoints.up("lg")]: {
         margin: 0,
         fontSize: "12px",

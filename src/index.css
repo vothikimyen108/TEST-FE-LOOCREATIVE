@@ -1,8 +1,26 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+  font-family: 'Malagun Gothic';
+  src:local('Malagun Gothic') url(font/malgun.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: Malagun Gothic,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  color: #333333;
+  line-height: 1.6;
+
+} */
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+body {
+  margin: 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;

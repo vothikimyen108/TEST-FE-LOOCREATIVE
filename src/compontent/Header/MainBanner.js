@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     margin: 0,
     [theme.breakpoints.up("lg")]: {
-      height: "500px",
-      backgroundSize: "100% auto",
+      height: "657px",
+      backgroundSize: "100% 100%",
     },
   },
   text: {
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
       width: "25%",
       position: "absolute",
       top: "12%",
-      left: "17%",
+      left: "18%",
       "& h1": {
         fontSize: 40,
       },
