@@ -9,12 +9,13 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import IconButton from "@material-ui/core/IconButton";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     // width: "300px",
     boxShadow: "none",
     background: "#fff",
     // marginLeft: 40,
+    textAlign: "left",
   },
   media: {
     height: 150,
@@ -26,15 +27,19 @@ const useStyles = makeStyles({
     padding: 13,
   },
   iconButton: {
-    flexBasis: "60%",
+    flexBasis: "50%",
+    textAlign: "center",
     display: "flex",
     justifyContent: "flex-end",
+    [theme.breakpoints.up("lg")]: {
+      flexBasis: "60%",
+    },
   },
   text: {
     fontSize: "20px !important",
     fontFamily: "Noto Sans KR sans-serif",
   },
-});
+}));
 
 export default function CardItem(props) {
   const classes = useStyles();

@@ -19,10 +19,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   right: {
-    textAlign: "right",
+    textAlign: "center",
+    [theme.breakpoints.up("lg")]: {
+      textAlign: "right",
+    },
   },
   left: {
-    textAlign: "left",
+    textAlign: "center",
+    [theme.breakpoints.up("lg")]: {
+      textAlign: "left",
+    },
   },
 }));
 const listLeft = [

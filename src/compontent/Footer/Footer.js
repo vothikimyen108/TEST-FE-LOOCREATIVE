@@ -31,7 +31,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     height: "200px",
   },
-  img: { width: "6%" },
+  img: {
+    width: "12%",
+    [theme.breakpoints.up("lg")]: {
+      width: "6%",
+    },
+  },
 }));
 
 export default function Footer() {
