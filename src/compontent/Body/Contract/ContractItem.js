@@ -5,17 +5,25 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     width: "100%",
     "& p": {
-      fontSize: "24px",
+      fontSize: "20px",
       margin: 10,
       fontWeight: 900,
       "&:last-child": {
-        fontSize: "18px",
+        fontSize: "16px",
         fontWeight: 200,
       },
     },
     "& img": {
       display: "block",
       margin: "0px auto",
+    },
+    [theme.breakpoints.up("lg")]: {
+      "& p": {
+        fontSize: "24px",
+        "&:last-child": {
+          fontSize: "18px",
+        },
+      },
     },
   },
 }));

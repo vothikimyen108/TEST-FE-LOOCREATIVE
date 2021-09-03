@@ -17,8 +17,12 @@ const useStyles = makeStyles((theme) => ({
   item: {
     margin: "10px",
     padding: "20px",
-    height: "248px",
+    height: "200px",
     width: "200px",
+    [theme.breakpoints.up("lg")]: {
+      height: "248px",
+      width: "200px",
+    },
   },
 }));
 const contractList = [

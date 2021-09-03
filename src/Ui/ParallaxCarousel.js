@@ -1,7 +1,6 @@
 import React from "react";
 import cx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import ParallaxSlide from "@mui-treasury/components/slide/parallax";
 import DotIndicator from "./DotIndicator";
@@ -36,16 +35,13 @@ const data = [
 const useStyles = makeStyles(({ palette, breakpoints, spacing }) => ({
   root: {
     // a must if you want to set arrows, indicator as absolute
-    // position: "relative",
+    position: "relative",
     margin: 0,
     textAlign: "center",
     width: "100%",
     height: "auto",
-    background: "#f4f5f8",
   },
   slide: {
-    // perspective: 1000, // create perspective
-    // overflow: "hidden",
     backgroundSize: "100% 100%",
     width: "100%",
     height: "230px",
@@ -81,10 +77,10 @@ const useStyles = makeStyles(({ palette, breakpoints, spacing }) => ({
   arrow: {
     display: "none",
     position: "absolute",
-    top: "20%",
+    top: "40%",
     transform: "translateY(-50%)",
     [breakpoints.up("lg")]: {
-      display: "inline-flex",
+      display: "inline",
     },
     "& .MuiSvgIcon-root": {
       width: 80,
@@ -111,7 +107,7 @@ const useStyles = makeStyles(({ palette, breakpoints, spacing }) => ({
     textAlign: "center",
     margin: 0,
     [breakpoints.up("lg")]: {
-      margin: 20,
+      marginTop: 20,
     },
   },
   pre: {
@@ -165,22 +161,13 @@ const ParallaxCarousel = () => {
     return (
       <>
         <div className={classes.pre}>
-          <img
-            src={data[pre].image}
-            alt={"slide"}
-            // className={cx(classes.arrow, classes.arrowLeft)}
-          />
+          <img src={data[pre].image} alt={"slide"} />
         </div>
         <div className={classes.pos}>
-          <img
-            src={data[pos].image}
-            alt={"slide"}
-            // className={cx(classes.arrow, classes.arrowRight)}
-          />
+          <img src={data[pos].image} alt={"slide"} />
         </div>
         <Button
           className={cx(classes.arrow, classes.arrowLeft)}
-          // classes={arrowStyles}
           disabled={index === 0}
           onClick={() => onChangeIndex(index - 1)}
         >

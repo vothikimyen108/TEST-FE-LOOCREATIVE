@@ -1,23 +1,27 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import Radio from "@material-ui/core/Radio";
-import Paper from "@material-ui/core/Paper";
+
 import Contract from "./Contract/Contract";
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: 0,
     textAlign: "center",
-    flexGrow: 1,
-    height: "600px",
+    height: "auto",
     "& h3": {
-      fontSize: "40px",
+      fontSize: "20px",
     },
     "& p": {
-      fontSize: "18px",
+      fontSize: "16px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "600px",
+      "& h3": {
+        fontSize: "40px",
+      },
+      "& p": {
+        fontSize: "18px",
+      },
     },
   },
   bottom: {
