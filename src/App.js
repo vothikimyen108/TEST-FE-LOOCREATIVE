@@ -5,14 +5,15 @@ import Header from "./compontent/Header/Header";
  import BannerQuick from "./compontent/Body/BannerQuick";
 
  import ContractLayout from "./compontent/Body/ContractLayout";
+ import ParallaxCarousel from "./Ui/ParallaxCarousel";
  function App() {
    return (
-     <>
-       <Header></Header>
-       <MainBaner></MainBaner>
-       <BannerQuick></BannerQuick>
-       <ContractLayout></ContractLayout>
-     </>
+     //  {/* <Header></Header>
+     //  <MainBaner></MainBaner>
+     //  <BannerQuick></BannerQuick>
+     //  <ContractLayout></ContractLayout> */}
+
+     <ParallaxCarousel></ParallaxCarousel>
    );
  }
 
