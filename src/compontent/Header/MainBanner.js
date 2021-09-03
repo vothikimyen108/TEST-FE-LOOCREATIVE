@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     margin: 0,
     [theme.breakpoints.up("lg")]: {
-      height: "666px",
+      height: "500px",
       backgroundSize: "100% auto",
     },
   },
