@@ -1,9 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { NavMenu, NavItem } from "@mui-treasury/components/menu/navigation";
-import { useZoomNavigationMenuStyles } from "@mui-treasury/styles/navigationMenu/zoom";
 import N from "../../assets/icon/N.png";
 import F from "../../assets/icon/f.png";
 import B from "../../assets/icon/B.png";

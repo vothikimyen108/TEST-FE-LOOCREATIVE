@@ -15,10 +15,11 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
     height: "100%",
     width: "100%",
-    // [theme.breakpoints.up("lg")]: {
-    //   height: "248px",
-    //   width: "200px",
-    // },
+    transition: "transform .2s",
+    "&:hover": {
+      transform: "scale(1.1)",
+      cursor: "pointer",
+    },
   },
 }));
 

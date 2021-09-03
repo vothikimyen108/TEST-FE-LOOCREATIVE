@@ -51,6 +51,11 @@ const useStyles = makeStyles((theme) => ({
         },
         "& img": {
           width: "35px",
+          transition: "transform .2s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            cursor: "pointer",
+          },
         },
       },
     },

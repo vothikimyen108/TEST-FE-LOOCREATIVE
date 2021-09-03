@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
       height: "248px",
       width: "200px",
     },
+    transition: "transform .2s",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
 }));
 const contractList = [
