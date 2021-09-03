@@ -28,7 +28,16 @@ body {
   line-height: 1.6;
 
 }
+.slick-dots li button::before {
+  font-size: 14px !important;
+  color: #000 !important;
+  opacity: 0.7;
+}
 
+.slick-dots li.slick-active button::before {
+  color: #157eff !important;
+  opacity: 1;
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
