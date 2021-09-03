@@ -12,19 +12,20 @@ import RegulationLayout from "./compontent/Body/RegulationLayout";
 import BuleLayout from "./compontent/Body/BuleLayout";
 import CardLayout from "./compontent/Body/CardLayout";
 import PartnerLayout from "./compontent/Body/PartnerLayout";
+import Footer from "./compontent/Body/Footer/Footer";
 function App() {
   return (
     <>
-      {/* <Header></Header>
+      <Header></Header>
       <MainBaner></MainBaner>
       <BannerQuick></BannerQuick>
       <ContractLayout></ContractLayout>
       <SlideLayout></SlideLayout>
-
       <RegulationLayout></RegulationLayout>
       <BuleLayout></BuleLayout>
-      <CardLayout></CardLayout> */}
+      <CardLayout></CardLayout>
       <PartnerLayout></PartnerLayout>
+      <Footer></Footer>
     </>
   );
 }

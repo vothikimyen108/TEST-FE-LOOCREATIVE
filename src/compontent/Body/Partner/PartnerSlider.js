@@ -7,7 +7,7 @@ import img2 from "../../../assets/Logo/Layer 2778.png";
 import img3 from "../../../assets/Logo/Layer 2782.png";
 import img4 from "../../../assets/Logo/Layer 2786.png";
 import img5 from "../../../assets/Logo/Layer 2790.png";
-import img6 from "../../../assets/Logo/Layer 2790.png";
+import img6 from "../../../assets/Logo/Layer 2794.png";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,14 +36,15 @@ const PartnerSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 3,
     arrows: false,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          slidesToScroll: 3,
         },
       },
     ],
@@ -76,6 +77,9 @@ const PartnerSlider = () => {
         </div>
         <div className={classes.root}>
           <img src={img5} alt="img" />
+        </div>
+        <div className={classes.root}>
+          <img src={img6} alt="img" />
         </div>
         <div className={classes.root}>
           <img src={img1} alt="img" />
